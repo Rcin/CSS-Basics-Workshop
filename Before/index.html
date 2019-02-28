@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Basic CSS Workshop</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link href="css/style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body id="top" class="center">
+  <h1>Basic CSS Workshop</h1>
+
+  <div class="navigation">
+    <a href="#developer">Developer Tools</a>
+    <a href="#csssyntax">CSS Syntax</a>
+    <a href="#boxmodel">Box Model</a>
+    <a href="#posanddis">Display and Position</a>
+    <a href="#flexbox">Flexbox</a>
+  </div>
+
+  <div class="content">
+    <div id="developer" class="content-box">
+      <h3>Developer Tools</h3>
+      <p>Open up Chrome, right click and select <b>Inspect</b></p>
+      <img src="images/inspector.png">
+      <p>You can change the styling in the developer tools but it's not going to save.</p>
+    </div>
+
+    <div id="csssyntax" class="content-box">
+      <h3>CSS Syntax</h3>
+      <p>selector {<br/> property: value;<br/>}</p>
+      <img src="images/selector.gif">
+      <p>Common mistake: </n>
+        Forgetting the semicolon </p>
+    </div>
+
+    <div id="boxmodel" class="content-box">
+      <h3>Box Model</h3>
+      <p>When something is not positioned the way you want to, always check the inspector. Look at the box model in the inspector to see where the extra space is coming from.</p>
+      <p>For example, let's see why the margin before the "Flexbox" section is different than everything else. </p>
+    </div>
+
+    <div id="posanddis" class="content-box">
+      <h3>Display and Position</h3>
+      <h4>Display</h4>
+      <div id="block">This is display: block; </div>
+      <p>This is <span>display: inline;</span> The span tag in HTML is by default set to display: inline. More about the span tag <a href="https://www.w3schools.com/tags/tag_span.asp">here</a>. </p>
+      <p>This is <span id="inlineblock1">display: </span><span id="inlineblock2">inline-block;</span> They work very similarly with inline but you can also add a height to them. Inline-block is commonly used for creating navigation bars.</p>
+      <div id="tohide">This can be hidden with uncommenting the display: none; in CSS or do so in the inspector.</div>
+      <h4>Position</h4>
+      <p>Everything in HTML is by default set to position: static</p>
+      <p>We have a div that is set to position:fixed on this page. Which one is it? <span id="hidden">The "Back to Top" div</span></p>
+      <div id="relative">This is position: relative. <br/> It is relative to its normal position.
+      </div>
+      <div id="absolute">This is position: absolute. <br/> And this is positioned relative to the nearest positioned ancestor (meaning anything that is not position: static). So to have the positioning take effect, you should put the div inside a relative positioned div. </div>
+
+      <a href="https://js6450.github.io/display-position-simulator.html">A simulator from Jiwon</a>
+    </div>
+
+    <div id="flexbox" class="content-box">
+      <h3>A Flexbox</h3>
+      <p>Below is the container and we add display: flex; on the container.</p>
+      <div class="flexgallery">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+      </div>
+      <p>How do you align the items differently if the boxes have different height? </p>
+      <div class="flexgallery2">
+        <div class="longbox">1</div>
+        <div class="box">2</div>
+        <div class="longbox">3</div>
+        <div class="box">4</div>
+        <div class="longbox">5</div>
+        <div class="box">6</div>
+      </div>
+      <p>When you don't know the answer, consult the <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Complete Flexbox guide</a>.</p>
+    </div>
+    <h3>I hope this is helpful!</h3>
+    <p>Best,<br/>Cindy</p>
+  </div>
+  <div class="fixedfooter">
+    <a href="#top">Back to Top</a>
+  </div>
+</body>
+
+</html>

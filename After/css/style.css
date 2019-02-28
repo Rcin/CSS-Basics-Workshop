@@ -1,0 +1,130 @@
+/*
+Comm Lab Basic CSS Workshop
+by Cindy Hu
+*/
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+.center{
+  margin: auto;
+  width: 60%;
+}
+
+.fixedfooter{
+  position: fixed;
+  bottom: 10px;
+  left: 30px;
+}
+
+/* Navigation Bar */
+.navigation{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+a{
+  text-decoration: none;
+  color: #b8b8b8;
+}
+
+a:hover {
+  color: black;
+}
+
+/* Content */
+.content{
+  background-color: #b3b3b369;
+  padding: 40px;
+}
+
+h3{
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+img{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+span{
+  color: red;
+}
+
+/* Display and Position */
+#block{
+  background-color: lightyellow;
+}
+
+#inlineblock1{
+  display: inline-block;
+  background-color: lightblue;
+  padding: 10px;
+  width: 60px;
+  height: 20px;
+}
+
+#inlineblock2{
+  display: inline-block;
+  background-color: hotpink;
+  padding: 10px;
+  width: 100px;
+  height: 20px;
+}
+
+/* #tohide{
+  display: none;
+} */
+
+#hidden{
+  display: none;
+}
+
+#relative{
+  position:relative;
+  left: 30px;
+  width: 600px;
+  height: 300px;
+  border: 3px solid Tomato;
+}
+
+#absolute{
+  position: absolute;
+  right: 0;
+  width: 300px;
+  height: 200px;
+  overflow: scroll;
+  border: 3px dashed Tomato;
+}
+
+/* Flexbox */
+#flexbox{
+  margin-top: 16px;
+}
+
+.flexgallery{
+  display: flex;
+  justify-content: space-between;
+}
+
+.box{
+  width: 100px;
+  height: 100px;
+  background-color: white;
+}
+
+.flexgallery2{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.longbox{
+  width: 100px;
+  height: 200px;
+  background-color: white;
+}

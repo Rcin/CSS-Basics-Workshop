@@ -1,0 +1,118 @@
+/*
+Comm Lab Basic CSS Workshop
+by Cindy Hu
+
+To do:
+1. Read through the HTML and CSS code and make sure you understand what's happening
+2. How do we make the "selector" text red?
+3. Let's take a look why the Flexbox section has a different margin than every other sections. How do we fix it?
+4. Set the text in HTML "display: inline-block" into two inline blocks and visualize the change.
+5. Find which HTML element has a fixed position on the site. Can you change its position to be locked on the right bottom?
+6. Read the instructions in the "position: absolute" section. How do you position the box correctly?
+7. Make the "flexgallery" and "flexgallery2" become flexbox.
+8. Read the complete guide for flexbox. How do you align the items in "flexgallery2" differently? How do you align them at the bottom and how do you align them in the center?
+
+*/
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+.center{
+  margin: auto;
+  width: 60%;
+}
+
+.fixedfooter{
+  position: fixed;
+  bottom: 10px;
+  left: 30px;
+}
+
+/* Navigation Bar */
+.navigation{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+a{
+  text-decoration: none;
+  color: #b8b8b8;
+}
+
+a:hover {
+  color: black;
+}
+
+/* Content */
+.content{
+  background-color: #b3b3b369;
+  padding: 40px;
+}
+
+h3{
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+img{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+span{
+  color: red;
+}
+
+/* Display and Position */
+#block{
+  background-color: lightyellow;
+}
+
+#inlineblock1{
+  background-color: lightblue;
+}
+
+#inlineblock2{
+  background-color: hotpink;
+}
+
+/* #tohide{
+  display: none;
+} */
+
+#hidden{
+  display: none;
+}
+
+#relative{
+  position:relative;
+  left: 30px;
+  width: 600px;
+  height: 300px;
+  border: 3px solid Tomato;
+}
+
+#absolute{
+  position: absolute;
+  right: 0;
+  width: 300px;
+  height: 200px;
+  overflow: scroll;
+  border: 3px dashed Tomato;
+}
+
+/* Flexbox */
+.box{
+  width: 100px;
+  height: 100px;
+  background-color: white;
+}
+
+.longbox{
+  width: 100px;
+  height: 200px;
+  background-color: white;
+}
